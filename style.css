@@ -24,7 +24,7 @@ body {
   font-size: 13px;
   font-weight: 500;
   width: 1140px;
-  margin: 10rem auto;
+  margin: 8rem auto;
 }
 
 /* Container */
@@ -120,9 +120,18 @@ body {
 /* Footer */
 
 .attribution {
+  color: var(--darkgreyblue);
   font-size: 11px;
+  font-weight: 300;
+  margin-top: 3rem;
   text-align: center;
 }
+
 .attribution a {
-  color: hsl(228, 45%, 44%);
+  color: var(--darkgreyblue);
+  text-decoration: none;
+}
+
+.attribution a:hover {
+  color: var(--lightgrey);
 }
