@@ -6,11 +6,6 @@
   --lightgrey: hsl(0, 0%, 81%);
   --lightblue: hsl(210, 46%, 95%);
 }
-/* 
-Note for text colors:
-
-1. "Verified Graduate" has the same color as the person's name with 50% opacity
-2. Review paragraphs inside the quotations have the same color as well, but are at 70% opacity */
 
 * {
   box-sizing: border-box;
@@ -42,8 +37,9 @@ body {
 /* Areas General */
 
 .testimonials {
-  color: var(--white);
   border-radius: 10px;
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.1);
+  color: var(--white);
   padding: 1.5rem 2rem;
 }
 
@@ -134,4 +130,31 @@ body {
 
 .attribution a:hover {
   color: var(--lightgrey);
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  body {
+    width: 320px;
+    margin: 4rem auto 2rem;
+  }
+
+  /* Container */
+
+  .container {
+    display: grid;
+    grid-template-columns: 320px;
+    grid-template-rows: repeat(5, auto);
+    grid-template-areas:
+      "Daniel"
+      "Jonathan"
+      "Jeanette"
+      "Patrick"
+      "Kira";
+  }
+
+  /* Areas General */
+
+  .testimonials h3 {
+    font-size: 1.2rem;
+  }
 }
